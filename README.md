@@ -21,4 +21,7 @@ This project is a C++ application that allows you to control your Windows system
    git clone https://github.com/telnorp/midivolcontrol.git
 
 2. **Find your MIDI port**:
-- change ccNumber in volumeController.cpp to the number you get in the debug section at 
+- change ccNumber in volumeController.cpp to the number you get in the debug section at https://midi.tools/
+
+3. **Add preprocessor definition**:
+- add __WINDOWS_MM__ to preprocessor definitions before compiling. (the code only works on windows platforms on its own)
